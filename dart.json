@@ -1,6 +1,6 @@
 {
 	"Create a StatelessWidget with material imported": {
-		"prefix": "slm",
+		"prefix": "stlm",
 		"body": [
 			"import 'package:flutter/material.dart';",
 			"",
@@ -11,12 +11,13 @@
 			"  Widget build(BuildContext context) {",
 			"    return ${2:Container()};",
 			"  }",
-			"}"
+			"}",
+			"",
 		],
 		"description": "Create a StatelessWidget with material imported"
 	},
  	"Create a StatefulWidget with material imported": {
-		"prefix": "sfm",
+		"prefix": "stfm",
 		"body": [
 			"class ${1:MyWidget} extends StatefulWidget {",
 			"  const ${1:MyWidget}({super.key});",
@@ -26,12 +27,12 @@
 			"}",
 			"",
 			"class _${1:MyWidgetState} extends State<${1:MyWidget}> {",
-			"",
 			"  @override",
 			"  Widget build(BuildContext context) {",
 			"    return ${2:Container()};",
 			"  }",
-			"}"
+			"}",
+			"",
 		],
 		"description": "Create a StatefulWidget with material imported",
 	}
