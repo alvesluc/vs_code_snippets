@@ -1,39 +1,49 @@
 {
-	"Create a StatelessWidget with material imported": {
-		"prefix": "stlm",
-		"body": [
-			"import 'package:flutter/material.dart';",
-			"",
-			"class ${1:MyWidget} extends StatelessWidget {",
-			"  const ${1:MyWidget}({super.key});",
-			"",
-			"  @override",
-			"  Widget build(BuildContext context) {",
-			"    return ${2:Container()};",
-			"  }",
-			"}",
-			"",
-		],
-		"description": "Create a StatelessWidget with material imported"
-	},
- 	"Create a StatefulWidget with material imported": {
-		"prefix": "stfm",
-		"body": [
-			"class ${1:MyWidget} extends StatefulWidget {",
-			"  const ${1:MyWidget}({super.key});",
-			"",
-			"  @override",
-			"  State<${1:MyWidget}> createState() => _${1:MyWidgetState}();",
-			"}",
-			"",
-			"class _${1:MyWidgetState} extends State<${1:MyWidget}> {",
-			"  @override",
-			"  Widget build(BuildContext context) {",
-			"    return ${2:Container()};",
-			"  }",
-			"}",
-			"",
-		],
-		"description": "Create a StatefulWidget with material imported",
-	}
+  "Create a StatelessWidget with material imported": {
+    "prefix": "stlm",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:MyWidget} extends StatelessWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container()};",
+      "  }",
+      "}"
+    ],
+    "description": "Create a StatelessWidget with material imported"
+  },
+  "Create a StatefulWidget with material imported": {
+    "prefix": "stfm",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:MyWidget} extends StatefulWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  State<${1:MyWidget}> createState() => _${1:MyWidgetState}();",
+      "}",
+      "",
+      "class _${1:MyWidgetState} extends State<${1:MyWidget}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container()};",
+      "  }",
+      "}"
+    ],
+    "description": "Create a StatefulWidget with material imported",
+  },
+  "Create a SizedBox with height property": {
+    "prefix": "sbh",
+    "body": "${0:const} SizedBox(height: $1)",
+    "description": "Create a SizedBox with height property",
+  },
+  "Create a SizedBox with width property": {
+    "prefix": "sbw",
+    "body": "${0:const} SizedBox(width: $1)",
+    "description": "Create a SizedBox with width property",
+  },
 }
